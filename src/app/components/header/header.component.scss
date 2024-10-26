@@ -1,0 +1,242 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+/* Header styles */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #86b817;
+  color: white;
+  height: 40px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.phone-number, .email {
+  margin-right: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.phone-number span:first-child, .email span:first-child {
+  margin-right: 10px;
+}
+
+/* Nav-Section */
+.nav-section {
+  background-color: #f2f2f2;
+  padding: 15px 20px;
+  height: auto;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(35, 33, 38);
+}
+
+.nav-search {
+  display: flex;
+  gap: 100px;
+  border-radius: 5px;
+}
+
+.location,
+.search {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.location {
+  width: 350px; 
+}
+
+.search {
+  width: 500px; /* Set a larger width for search */
+}
+
+.location input,
+.search input {
+  border: none; /* Remove border from inputs */
+  outline: none;
+  padding: 0 10px; /* Add horizontal padding for text */
+  height: 50px; /* Increased height for inputs */
+  width: 100%; /* Make input fill the container */
+}
+
+.language button {
+  background-color: #e5ebc8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 15px; /* Adjusted padding */
+  font-size: 18px; /* Increased font size */
+  font-weight: bold;
+  margin-right: 80px; /* Adjust margin for spacing */
+}
+
+/* Icon positioning */
+.location i, .search i {
+  margin-right: 8px; /* Space between icon and input text */
+  position: absolute; /* Position icon inside the input */
+  left: 15px; /* Adjust as needed */
+}
+
+.search {
+  position: relative; /* Make search relative for absolute positioning of icon */
+}
+
+.search input {
+  padding-left: 40px; /* Add padding for the icon */
+}
+
+.location {
+  position: relative; /* Make location relative for absolute positioning of icon */
+}
+
+.location input {
+  padding-left: 40px; /* Add padding for the icon */
+}
+
+
+
+
+
+/* Bottom-nav-section */
+.bottom-nav-section {
+  background-color: #d1e5a4; /* Light green background */
+  min-height: 5px;
+}
+
+.bottom-nav-container {
+  width: 100%; /* Set to full width */
+  max-width: 1200px; /* Maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 10px 30px; /* Reduced padding for a smaller height */
+  display: flex; /* Use flexbox for the container */
+  justify-content: space-between; /* Space between left and right navs */
+  align-items: center; /* Center items vertically */
+}
+
+.left-nav {
+  flex: 1; /* Allow left nav to take up space */
+}
+
+.right-nav {
+  display: flex; /* Ensure right nav items are displayed in a row */
+  flex: 1; /* Allow right nav to take up space */
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.nav-list {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Use flexbox for layout */
+  gap: 20px; /* Slightly reduced space between items */
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
+}
+
+.separator {
+  margin: 0 2px; /* Decreased space around the separator */
+  color: black; /* Color of the separator */
+  font-size: 36px; /* Increased font size to match other items */
+}
+
+.nav-list li {
+  position: relative; /* For dropdown positioning */
+  text-align: center; /* Center text */
+}
+
+.nav-list a {
+  text-decoration: none; /* No underline on links */
+  color: black; /* Link color */
+  padding: 8px; /* Reduced padding for clickable area */
+  transition: background-color 0.3s; /* Smooth hover transition */
+  font-size: 18px; /* Increased font size */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack icon above text */
+  align-items: center; /* Center items */
+}
+
+.nav-list a i {
+  font-size: 20px; /* Increased icon size */
+  margin-bottom: 4px; /* Space between icon and text */
+}
+
+.nav-list a:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Light hover effect */
+}
+
+.dropdown {
+  position: absolute; /* Position dropdown relative to parent */
+  top: 100%; /* Position dropdown below parent */
+  left: 0; /* Align dropdown with parent */
+  background-color: #f9f9f9; /* White background */
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 8px; /* Reduced padding for dropdown items */
+  display: none; /* Hide dropdown initially */
+}
+
+.nav-list li:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown a {
+  padding: 8px; /* Reduced padding for dropdown items */
+  display: block; /* Make dropdown items block elements */
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0; /* Light gray hover effect */
+}
+
+.login-button {
+  background-color: #4CAF50; /* Green background */
+  color: #fff; /* White text */
+  padding: 8px 18px; /* Reduced padding for button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 18px; /* Increased font size for the button */
+  display: flex; /* Flex layout for button */
+  align-items: center;
+  justify-content: center;
+
+}
+
+.login-button i {
+  margin-right: 4px; /* Space between icon and text */
+}
+
+.login-button:hover {
+  background-color: #3e8e41; /* Darker green hover effect */
+}
+
+/* Optional: Adjust for responsiveness */
+@media (max-width: 768px) {
+  .bottom-nav-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .nav-list {
+    flex-direction: column; /* Stack nav items vertically */
+    gap: 10px; /* Space between items */
+  }
+}

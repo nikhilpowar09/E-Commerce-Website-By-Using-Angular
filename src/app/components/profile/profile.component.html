@@ -1,0 +1,20 @@
+<h2>User Profile</h2>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input id="name" formControlName="name" required />
+
+  <label for="email">Email:</label>
+  <input id="email" formControlName="email" required />
+
+  <label for="phone">Phone:</label>
+  <input id="phone" formControlName="phone" />
+
+  <button type="submit">Update Profile</button>
+</form>
+
+<div *ngIf="submitted">
+  <h3>Profile Updated!</h3>
+  <p>Name: {{ profileForm.value.name }}</p>
+  <p>Email: {{ profileForm.value.email }}</p>
+  <p>Phone: {{ profileForm.value.phone }}</p>
+</div>

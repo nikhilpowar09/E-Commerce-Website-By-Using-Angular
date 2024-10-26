@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <div class="phone-number">
+                    <span><i class="fas fa-phone"></i></span>
+                    <span>-1234567890</span>
+                </div>
+                <div class="email">
+                    <span><i class="fas fa-envelope"></i></span>
+                    <span>mahilabachat&#64;gmail.com</span>
+                  </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="nav-section">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>LOGO</h2>
+            </div>
+            <div class="nav-search">
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Select Delivery Location" />
+                </div>
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search For Product.." />
+                </div>
+                <div class="language">
+                    <button>मराठी</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Section -->
+    <section class="bottom-nav-section">
+        <div class="bottom-nav-container">
+            <div class="left-nav">
+                <ul class="nav-list">
+                    <li><a routerLink="/">Home</a></li>
+                    <li>
+                        <a routerLink="#">Food</a>
+                        <div class="dropdown">
+                            <a routerLink="#">Pizza</a>
+                            <a routerLink="#">Burgers</a>
+                            <a routerLink="#">Sushi</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a routerLink="#">Clothes</a>
+                        <div class="dropdown">
+                            <a routerLink="#">Men's Wear</a>
+                            <a routerLink="#">Women's Wear</a>
+                            <a routerLink="#">Kids' Wear</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a routerLink="#">Home Decors</a>
+                        <div class="dropdown">
+                            <a routerLink="#">Furniture</a>
+                            <a routerLink="#">Lighting</a>
+                            <a routerLink="#">Wall Art</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a routerLink="/rental">Rentals</a>
+                        <div class="dropdown">
+                            <a routerLink="/rental">Apartments</a> <!-- Corrected the routerLink -->
+                            <a routerLink="#">Cars</a>
+                            <a routerLink="#">Equipment</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-nav">
+                <ul class="nav-list">
+                    <li>
+                        <a routerLink="#">
+                            <i class="fas fa-heart"></i>
+                            <span>Wishlist</span>
+                        </a>
+                    </li>
+                    <li class="separator">|</li>
+                    <li>
+                        <a routerLink="/cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Cart</span>
+                        </a>
+                    </li>
+                    <li class="separator">|</li>
+                    <li>
+                        <a routerLink="/profile">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li class="separator">|</li>
+                    <li>
+                      <a class="login-button" routerLink="/login">LOGIN</a>
+                  </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop By Categories</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('https://images.unsplash.com/photo-1542831371-3a7c0e153dc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            position: relative;
+            width: 600px;
+            height: 250px;
+            margin: 15px;
+            overflow: hidden;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .text-background {
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            margin: 0;
+            color: black;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .button {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            background-color: white;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Shop By Categories</h1>
+    <div class="container">
+        <div class="card">
+            <img src="assets/homemade product.jpg" alt="Food">
+            <div class="text-background">
+                <h3>Homemade Food Products</h3>
+            </div>
+            <a href="#" class="button">Shop Now</a>
+        </div>
+        <div class="card">
+            <img src="assets/set-of-sewing-accessories-picjumbo-com.jpg" alt="Electronics">
+            <div class="text-background">
+                <h3>Sewing Cloths are Available</h3>
+            </div>
+            <a href="#" class="button">Shop Now</a>
+        </div>
+        <div class="card">
+            <img src="assets/home decor.jpg" alt="Fashion">
+            <div class="text-background">
+                <h3>Home Decors Products Available</h3>
+            </div>
+            <a href="#" class="button">Shop Now</a>
+        </div>
+        <div class="card">
+            <img src="assets/festival cloths.jpg" alt="Home">
+            <div class="text-background">
+                <h3>Festival Cloths are Available on Rent</h3>
+            </div>
+            <a href="#" class="button">Shop Now</a>
+        </div>
+    </div>
+</body>
+</html>

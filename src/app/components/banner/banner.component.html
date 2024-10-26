@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Food</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+        .banner {
+            background-image: url("assets/images.jpeg");
+            height: 70vh;
+            padding: 20px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .title {
+            color: #6f9321;
+            font-family: 'Georgia', serif;
+            font-size: 58px;
+            margin: 0;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(18, 17, 17);
+            background-color: white;
+            border: 2px solid #6f9321;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #f0f0f0;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            padding: 20px;
+            margin: 15px;
+            background-color: rgba(255, 255, 0, 0.2);
+            border-radius: 10px;
+            flex: 1;
+            color: black;
+        }
+        .feature-title {
+            color: #e2b000;
+            margin: 0;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .feature-desc {
+            color: black;
+            margin: 0;
+        }
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature {
+                margin: 10px 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="title">Fresh Food</h1>
+        <a routerLink="/products" class="btn">View Products</a>
+    </div>
+
+    <section class="features">
+        <div class="feature">
+            <div>
+                <h2 class="feature-title">Natural</h2>
+                <p class="feature-desc">Eat local, Consume Local.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="assets/fast-delivery.png" alt="Fastest Delivery" class="feature-icon">
+            <div>
+                <h2 class="feature-title">Fastest Delivery</h2>
+                <p class="feature-desc">Delivery at your Doorstep</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="assets/24-hours-support.png" alt="24X7 Support" class="feature-icon">
+            <div>
+                <h2 class="feature-title">24X7 Support</h2>
+                <p class="feature-desc">Support Options Including 24x7</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="assets/return-box.png" alt="Return Product" class="feature-icon">
+            <div>
+                <h2 class="feature-title">Return Product</h2>
+                <p class="feature-desc">Product Return Process</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
