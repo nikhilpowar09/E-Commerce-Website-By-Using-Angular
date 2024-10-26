@@ -1,4 +1,6 @@
 # ECommerce
+![1](https://github.com/user-attachments/assets/24a4f896-81a2-4f2d-92fd-3a26c9194af4)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
 
