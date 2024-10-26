@@ -3,6 +3,7 @@ body {
   margin: 0;
   background-color: #f4f4f4;
 }
+
 /* Header styles */
 .header-container {
   display: flex;
@@ -65,7 +66,7 @@ body {
 }
 
 .location {
-  width: 350px; 
+  width: 350px;
 }
 
 .search {
@@ -113,10 +114,6 @@ body {
 .location input {
   padding-left: 40px; /* Add padding for the icon */
 }
-
-
-
-
 
 /* Bottom-nav-section */
 .bottom-nav-section {
@@ -217,7 +214,6 @@ body {
   display: flex; /* Flex layout for button */
   align-items: center;
   justify-content: center;
-
 }
 
 .login-button i {
@@ -228,15 +224,96 @@ body {
   background-color: #3e8e41; /* Darker green hover effect */
 }
 
-/* Optional: Adjust for responsiveness */
-@media (max-width: 768px) {
+/* Media Queries for responsiveness */
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column; /* Stack header elements */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .phone-number, .email {
+    margin-right: 0; /* Reset margin */
+    margin-bottom: 10px; /* Space between phone and email */
+  }
+
+  .nav-search {
+    flex-direction: column; /* Stack search inputs */
+    gap: 10px; /* Space between inputs */
+    width: 100%; /* Full width */
+  }
+
+  .location, .search {
+    width: 100%; /* Full width for inputs */
+  }
+
+  .language button {
+    margin-right: 0; /* Reset margin */
+    width: 100%; /* Full width for buttons */
+    text-align: center; /* Center button text */
+  }
+}
+
+/* Small Screens */
+@media (min-width: 481px) and (max-width: 768px) {
   .bottom-nav-container {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column; /* Stack items vertically */
     align-items: flex-start; /* Align items to the start */
   }
 
   .nav-list {
     flex-direction: column; /* Stack nav items vertically */
     gap: 10px; /* Space between items */
+  }
+
+  .nav-search {
+    gap: 20px; /* Adjust gap for small screens */
+  }
+
+  .location, .search {
+    width: 100%; /* Full width for inputs */
+  }
+
+  .language button {
+    margin-right: 0; /* Reset margin */
+    width: 100%; /* Full width for buttons */
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-search {
+    gap: 50px; /* Adjust gap for medium screens */
+  }
+
+  .location {
+    width: 300px; /* Adjust width for medium screens */
+  }
+
+  .search {
+    width: 400px; /* Adjust width for medium screens */
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .nav-search {
+    gap: 100px; /* Default gap for larger screens */
+  }
+
+  .bottom-nav-container {
+    padding: 10px 20px; /* Adjust padding for larger screens */
+  }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1441px) {
+  .nav-search {
+    gap: 150px; /* Increase gap for extra large screens */
+  }
+
+  .bottom-nav-container {
+    padding: 10px 30px; /* Adjust padding for extra large screens */
   }
 }
